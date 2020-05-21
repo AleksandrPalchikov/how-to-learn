@@ -95,7 +95,7 @@ text-decoration: none;
  position: absolute;
  top: 30px;
  left: 64px;
- background-image: url('../images/logo_place_header.svg')
+ background-image: url('images/logo_place_header.svg')
 }
 
 /*NEW Section*/
@@ -311,7 +311,7 @@ overflow: hidden;
 }
 
 .kaufman__triangle {
-  background-image: url('../images/kaufman-triangle.svg');
+  background-image: url('images/kaufman-triangle.svg');
   background-size: contain;
   position: absolute;
   top: 0px;
