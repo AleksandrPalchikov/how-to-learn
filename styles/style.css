@@ -227,7 +227,6 @@ background-position: bottom left;
   font-size: 120px;
   font-weight: bold;
   text-align: center;
-  z-index: 2;
 }
 
 .feinman__subtitle {
@@ -239,11 +238,9 @@ background-position: bottom left;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  z-index: 2;
 }
 
 .feiman__link {
-  z-index: 10;
   position: absolute;
   text-decoration: none;
   top: 50%;
