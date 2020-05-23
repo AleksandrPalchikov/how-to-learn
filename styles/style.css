@@ -57,13 +57,9 @@ text-decoration: none;
  width: 765px;
  height: 608px;
  z-index: 1;
-}
-
-.header-image_main-illustration {
  align-self: flex-end;
- width: 100%;
+ object-fit: fill;
 }
-
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
@@ -159,10 +155,7 @@ margin: auto;
  font-size: 60px;
  font-weight: bold;
  z-index: 1;
- }
-
- .section-title__theme-white{
-  margin: 0 auto 20px;
+ margin: 0 auto 20px;
  }
 
 .section-subtitle {
@@ -183,9 +176,6 @@ margin: auto;
  flex-wrap: wrap;
  padding: 0;
  z-index: 2;
-}
-
-.table_theme_white {
  margin: 0 auto 100px;
 }
 
@@ -220,32 +210,35 @@ margin: auto;
 /*NEW Section*/
 
 .feinman {
+display: flex;
+flex-direction: column;
+align-items: center;
 height: 790px;
+margin: 0px;
+padding:100px 0px 0px;
 position: relative;
-margin: 0;
 background-color: #f2f2f2;
-z-index: -2;
+z-index: -1;
 }
 
 .feinman__title {
-  z-index: 2;
   width: 648px;
-  padding-top: 100px;
-  margin: 0px auto 70px; /*distance between feiman-block and feiman__title must be 100px, but i cannot control that with margin*/
-  text-align: center;
+  margin: 0px;
+  padding:0px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
+  text-align: center;
+  z-index: 2;
 }
 
 .feinman__subtitle {
-  z-index: 2;
-  width: 648px;
-  margin: 0 auto;
-  text-align: center;
+  margin: 0px;
+  padding: 70px 0px 0px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .feiman__link {
@@ -258,7 +251,6 @@ z-index: -2;
   font-size: 36px;
   font-weight: normal;
   color: black;
-
 }
 
 .feiman-image_main-illustration {
@@ -282,18 +274,17 @@ z-index: -1;
 overflow: hidden;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
   color: white;
   margin-top: 90px;
-  margin-bottom: 20px;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   color: white;
 }
 
-.table__theme_dark {
-  margin: 0 auto 90px;
+.table_theme_dark {
+  margin-bottom: 90px;
 }
 
 .table__cell_theme_dark {
@@ -337,10 +328,13 @@ overflow: hidden;
  margin: 60px auto 40px;
 }
 
-.footer__column_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.content_copyright {
   flex-basis: 711px;
   align-items: flex-start;
 }
@@ -348,17 +342,16 @@ overflow: hidden;
 .logo_place_footer {
  width: 183px;
  height: 35px;
+ background-image: url('../images/logo_place_footer.svg')
 }
 
-.footer__column_info {
-  display: flex;
-  flex-direction: column;
+.content_info {
+  justify-content: flex-start;
 }
 
-
-.footer__column_social {
-  display: flex;
-  flex-direction: column;
+.content_social {
+  justify-content: flex-start;
+  margin-top: 0px;
 }
 
 .footer__author {
@@ -382,15 +375,20 @@ overflow: hidden;
 
 .footer__column-links {
  padding: 0px;
+ margin-top: 0px;
+ margin-bottom: 16px;
  list-style: none;
+}
+
+.footer__column-link {
+ padding: 0px;
  text-decoration: none;
  color: white;
- margin-top: 0;
- margin-bottom: 16px;
  line-height: 30px;
  font-size: 18px;
  font-weight: normal;
 }
+/*В брифе нет класса footer__column-link, ecть лишь footer__column-links, но я поправил и добавил его - по запросу ревьюера*/
 
 .footer__social-icon{
  padding: 0;
