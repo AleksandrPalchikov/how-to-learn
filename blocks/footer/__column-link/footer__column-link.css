@@ -1,0 +1,10 @@
+
+.footer__column-link {
+  padding: 0px;
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+ }
+ /*В брифе нет класса footer__column-link, ecть лишь footer__column-links, но я поправил и добавил его - по запросу ревьюера*/
