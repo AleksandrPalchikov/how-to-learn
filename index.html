@@ -72,13 +72,12 @@
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
           <div class="video__iframes">
-              <iframe class="video__iframe" id="ytplayer" type="text/html" width="515" height="316"
-src="https://www.youtube.com/embed/5MgBikgcWnY"
-frameborder="0" allowfullscreen>Здравствуйте, ваш браузер не может показать классную штуку, потому что не поддерживает iframe
+              <iframe class="video__iframe"
+src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen>
+              <!--В валидаторе текст внутри iframe обозначается как ошибака, но в теории ЯП указанно, что следует указать текст, так как браузер может не поддерживать ифреймы. Раздел "Кроссбраузерность iframe"-->
               </iframe>
-              <iframe class="video__iframe" id="ytplayer" type="text/html" width="515" height="316"
-src="https://www.youtube.com/embed/arj7oStGLkU"
-frameborder="0" allowfullscreen>Здравствуйте, ваш браузер не может показать классную штуку, потому что не поддерживает iframe
+              <iframe class="video__iframe"
+src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen>
               </iframe>
           </div>
       </section>
@@ -144,13 +143,22 @@ frameborder="0" allowfullscreen>Здравствуйте, ваш браузер 
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
-          </p>
-          <h3 class="khan__quote-author">Джордж Лукас</h3>
+          <blockquote class="khan__quote">
+            Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
+          </blockquote>
+          <!--
+              <blockquote>
+                <p>Text</p>
+              </blockquote>
+            Эта структура во всех источниках, но я не могу оставить p без ввода дополнительного класса (pagging and margin:0).
+          -->
+          <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline"> Кинорежиссер, продюсер</p>
         <div class="khan__book-container">
           <img src="./images/khan-book.jpg" class="khan__book-pic" alt="Книга">
-          <a href="#" class="khan__buy-link">Купить книгу →</a>
+          <div>
+            <a href="#" class="khan__buy-link">Купить книгу →</a>
+          </div>
         </div>
         </div>
       </section>
@@ -214,12 +222,16 @@ frameborder="0" allowfullscreen>Здравствуйте, ваш браузер 
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-      <div class="resources__logo-zone">
-        <img src="images/logo/resources-arzamas.svg" class="logo" alt="Арзамас">
-        <img src="images/logo/resources-n1.svg" class="logo" alt="Н1">
-        <img src="images/logo/resources-strelka.svg" class="logo" alt="Стрелка">
-        <img src="images/logo/resources-polka.svg" class="logo" alt="Полка">
-      </div>
+      <ul class="resources__logo-zone">
+        <li><a href="#"><img src="images/logo/resources-arzamas.svg" alt="Арзамас" class="resources__logo">
+        </a></li>
+        <li><a href="#"><img src="images/logo/resources-n1.svg" alt="Н1" class="resources__logo">
+        </a></li>
+        <li><a href="#"><img src="images/logo/resources-strelka.svg" alt="Стрелка" class="resources__logo">
+        </a></li>
+        <li><a href="#"><img src="images/logo/resources-polka.svg" alt="Полка" class="resources__logo">
+        </a></li>
+      </ul>
       </section>
     </main>
 
