@@ -1,8 +1,7 @@
 .khan__buy-link {
-  display: inline-block;
   color: #2f80ed;
   text-decoration: none;
-  transform: opacity 1s ease;
+  transition: opacity .2s ease;
   opacity: 1;
   line-height: 42px;
   font-size: 30px;
